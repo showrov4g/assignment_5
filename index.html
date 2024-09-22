@@ -14,25 +14,76 @@
     <!-- header section start  -->
     <header>
         <!-- menu section  -->
-        <div class="w-11/12 mx-auto">
-            <!-- blog  -->
-            <div class="flex justify-between">
-                <div>
-                    <button>Blog</button>
-                </div>
-                <div class="flex items-center">
-                    <img src="./image/logo.png" alt="">
-                    <h4>Donate Bangladesh</h4>
-                </div>
-                <div class="flex items-center">
-                    <img src="./image/coin.png" alt="">
-                    <h4><span>5500</span>BDT</h4>
+        <div class="bg-[#F9F7F3]">
+            <div class="w-11/12 mx-auto py-5 ">
+                <div class="flex justify-between">
+                    <!-- blog -->
+                    <div>
+                        <button
+                            class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md hover:bg-[#91e02a] hover:text-[#19250a]">Blog</button>
+                    </div>
+                    <!-- logo -->
+                    <div class="hidden sm:block">
+                        <div class="flex items-center space-x-3 ">
+                            <img class="w-auto" src="./image/logo.png" alt="">
+                            <h3 class="text-xl font-semibold ">Donate Bangladesh</h3>
+                        </div>
+                    </div>
+                    <!-- amount -->
+                    <div class="flex items-center  space-x-1 md:space-x-3">
+                        <img src="./image/coin.png" alt="">
+                        <h4 class="text-xl font-medium">5500</h4>
+                        <h4 class="text-xl font-medium">BDT</h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
 
+        <!-- button  -->
+
+        <div class="flex items-center justify-center space-x-3 mt-10 md:mt-14 mb-4 md:mb-7">
+            <button
+                class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md">Donation</button>
+            <button
+                class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl rounded-md border-2">History</button>
+        </div>
+
+    </header>
     <!-- header section end -->
+
+    <!-- donation section start  -->
+
+    <section class="w-10/12 mx-auto">
+        <div class="card lg:card-side bg-base-100 shadow-xl space-x-5 p-5">
+            <!-- image  -->
+            <div class="w-full lg:w-3/6 mb-5 lg:mb-0">
+                <img class="w-full" src="./image/noakhali.png" alt="">
+            </div>
+            <!-- text  -->
+            <div class="w-full lg:w-3/6 flex flex-col items-start ">
+                <!-- taka amount  -->
+                <p class="bg-gray-300 inline py-4 px-5 rounded-xl space-x-1 text-lg font-semibold"><img class="inline" src="./image/coin.png" alt=""><span>100</span> BDT</p>
+                <!-- text  -->
+                <div class="w-full flex flex-col space-y-5 mt-6">
+                    <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p class="text-base font-light"> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your
+                        donation will help provide essential supplies and to those affected by this disaster. Every
+                        contribution, big or small, makes difference. Please join us in supporting the relief efforts
+                        and making a positive impact on the lives of those in need.</p>
+
+                        <!-- input  -->
+
+                    <input class="border-2 outline-none p-3 text-base rounded-xl" type="text" placeholder="Write Donation Amount">
+                    <button
+                        class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md">Donate
+                        Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
 
 
