@@ -133,7 +133,7 @@
                 <div class=" lg:w-3/6 flex flex-col  justify-center items-start space-y-6">
                     <!-- taka amount  -->
                     <p class="bg-gray-300 inline py-4 px-5 rounded-xl space-x-1 text-lg font-semibold"><img
-                            class="inline" src="./image/coin.png" alt=""><span>100</span> BDT</p>
+                            class="inline" src="./image/coin.png" alt=""><span id="quta-donate">100</span> BDT</p>
                     <!-- text  -->
                     <div class="w-full flex flex-col justify-center items-stretch space-y-7 mt-6">
                         <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
@@ -150,9 +150,9 @@
 
                         <!-- input  -->
 
-                        <input class="border-2 outline-none p-3 text-base rounded-xl" type="text"
+                        <input id="quta-donate-input" class="border-2 outline-none p-3 text-base rounded-xl" type="text"
                             placeholder="Write Donation Amount">
-                        <button
+                        <button id="quta-donate-button"
                             class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md">Donate
                             Now</button>
                     </div>
@@ -176,6 +176,13 @@
             </div>
         </section>
         <!-- ---------popup modal end---------- -->
+
+        <!-- history section -->
+         <section>
+            <div id="history">
+
+            </div>
+         </section>
     </main>
 
 

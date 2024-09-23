@@ -5,3 +5,7 @@ function selectWithId(id){
 function totalDonation(id){
     return parseFloat(document.getElementById(id).innerText);
 }
+
+function selectId(id){
+    return document.getElementById(id);
+}
