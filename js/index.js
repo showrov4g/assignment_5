@@ -37,10 +37,16 @@ document
     }
 
     // history 
-    let historyItem = document.createElement('div');
+    let history= document.createElement('div');
+    history.className = "p-3 rounded-md border-2 border-gray-500";
+    history.innerHTML = `
+      <p class="text-xl"> ${floodDonateInput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
+      <p>${new Date().toString()}</P>
 
-
-
+      `
+    let historyContainer = document.getElementById('history');
+    historyContainer.insertBefore(history, historyContainer.firstChild);
+    console.log(historyContainer);
 
   });
 
@@ -131,8 +137,9 @@ document
     }
   });
 
-
 // popup close 
 document.getElementById('popup-close-button').addEventListener('click', function(){
     let popup = document.getElementById('popup').classList.add('hidden');
 })
+
+
