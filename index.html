@@ -13,14 +13,14 @@
     <main class="relative">
 
         <!-- header section start  -->
-        <header id="header" class="z-50 w-full">
+        <header id="header" class="z-20 w-full">
             <!-- menu section  -->
-            <div class="bg-[#F9F7F3] ">
+            <div id="header-content" class="bg-[#F9F7F3] ">
                 <div class="w-11/12 mx-auto py-5 ">
                     <div class="flex justify-between">
                         <!-- blog -->
                         <div>
-                            <button
+                            <button id="blog-btn"
                                 class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md hover:bg-[#91e02a] hover:text-[#19250a]">Blog</button>
                         </div>
                         <!-- logo -->
@@ -33,7 +33,7 @@
                         <!-- amount -->
                         <div class="flex items-center  space-x-1 md:space-x-3">
                             <img src="./image/coin.png" alt="">
-                            <h4 id="my-balance" class="text-xl font-medium">5500</h4>
+                            <h4 id="my-balance" class="text-xl font-medium">10000</h4>
                             <h4 class="text-xl font-medium">BDT</h4>
                         </div>
                     </div>
@@ -44,9 +44,9 @@
 
             <div id="button-section" class="flex items-center justify-center space-x-3 mt-10 md:mt-14 mb-4 md:mb-7">
                 <button id="btn-donate" 
-                    class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md">Donation</button>
+                    class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md outline-none">Donation</button>
                 <button id="btn-history"
-                    class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl rounded-md border-2">History</button>
+                    class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl rounded-md border-2 outline-none">History</button>
             </div>
 
         </header>
@@ -163,11 +163,11 @@
         </section>
 
             <!--------------- popup modal  ----------------->
-        <section class="absolute top-6 lg:top-[6%] lg:right-[35%] lg:left-[35%]">
+        <section class="absolute top-6 lg:top-[6%] lg:right-[35%] lg:left-[35%] z-50">
 
 
             <div id="popup"
-                class="hidden fixed bg-white flex flex-col justify-center items-center space-y-5 px-8 py-7 rounded-xl z-20 shadow-xl">
+                class="hidden fixed bg-white flex flex-col justify-center items-center space-y-5 px-8 py-7 rounded-xl shadow-xl">
                 <h1 class="text-4xl font-bold capitalize">congestes!</h1>
                 <p class="flex"><img src="./image/coin.png" alt=""><span id="popup-balance" class="ml-2 text-2xl">0</span></p>
                 <h4 class="text-gray-500 capitalize text-xl">you have donated for humankind</h4>
