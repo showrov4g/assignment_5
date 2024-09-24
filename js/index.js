@@ -7,39 +7,30 @@ document
     let myBalance = totalDonation("my-balance");
     let floodDonateBalance = floodDonateInput + floodDonate;
     let myCurrentBalance = myBalance - floodDonateInput;
-    let donateBalance = (document.getElementById("flood-donate").innerText =
+    let donateBalance = (selectId("flood-donate").innerText =
       floodDonateBalance);
-
-    let myBalanceAfterDonate = (document.getElementById(
-      "my-balance"
-    ).innerText = myCurrentBalance);
-    let popupBalance = (document.getElementById("popup-balance").innerText =
-      floodDonateInput);
+    let myBalanceAfterDonate = (selectId("my-balance").innerText =
+      myCurrentBalance);
+    let popupBalance = (selectId("popup-balance").innerText = floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById("flood-donate").innerText =
-        floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("flood-donate").innerText = floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
 
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById("flood-donate").innerText =
-        floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("flood-donate").innerText = floodDonate);
       // popup
-      let popup = document.getElementById("popup").classList.add("hidden");
+      let popup = selectId("popup").classList.add("hidden");
       return;
     }
     // popup item
     if (floodDonateInput > 0) {
-      let popup = document.getElementById("popup").classList.remove("hidden");
+      let popup = selectId("popup").classList.remove("hidden");
     }
 
     // history
@@ -50,7 +41,7 @@ document
       <p>${new Date().toString()}</P>
 
       `;
-    let historyContainer = document.getElementById("history");
+    let historyContainer = selectId("history");
     historyContainer.insertBefore(history, historyContainer.firstChild);
     console.log(historyContainer);
   });
@@ -66,43 +57,34 @@ document
     let myBalance = totalDonation("my-balance");
     let floodDonateBalance = floodDonateInput + floodDonate;
     let myCurrentBalance = myBalance - floodDonateInput;
-    let donateBalance = (document.getElementById(
-      "feni-flood-donate"
-    ).innerText = floodDonateBalance);
+    let donateBalance = (selectId("feni-flood-donate").innerText =
+      floodDonateBalance);
 
-    let myBalanceAfterDonate = (document.getElementById(
-      "my-balance"
-    ).innerText = myCurrentBalance);
-    let popupBalance = (document.getElementById("popup-balance").innerText =
-      floodDonateInput);
+    let myBalanceAfterDonate = (selectId("my-balance").innerText =
+      myCurrentBalance);
+    let popupBalance = (selectId("popup-balance").innerText = floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById(
-        "feni-flood-donate"
-      ).innerText = floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("feni-flood-donate").innerText =
+        floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
 
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById(
-        "feni-flood-donate"
-      ).innerText = floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("feni-flood-donate").innerText =
+        floodDonate);
       // popup
-      let popup = document.getElementById("popup").classList.add("hidden");
+      let popup = selectId("popup").classList.add("hidden");
       return;
     }
     // popup item
 
     if (floodDonateInput > 0) {
-      let popup = document.getElementById("popup").classList.remove("hidden");
+      let popup = selectId("popup").classList.remove("hidden");
     }
     // history
     let history = document.createElement("div");
@@ -112,7 +94,7 @@ document
           <p>${new Date().toString()}</P>
     
           `;
-    let historyContainer = document.getElementById("history");
+    let historyContainer = selectId("history");
     historyContainer.insertBefore(history, historyContainer.firstChild);
     console.log(historyContainer);
   });
@@ -128,40 +110,32 @@ document
     let myBalance = totalDonation("my-balance");
     let floodDonateBalance = floodDonateInput + floodDonate;
     let myCurrentBalance = myBalance - floodDonateInput;
-    let donateBalance = (document.getElementById("quta-donate").innerText =
+    let donateBalance = (selectId("quta-donate").innerText =
       floodDonateBalance);
 
-    let myBalanceAfterDonate = (document.getElementById(
-      "my-balance"
-    ).innerText = myCurrentBalance);
-    let popupBalance = (document.getElementById("popup-balance").innerText =
-      floodDonateInput);
+    let myBalanceAfterDonate = (selectId("my-balance").innerText =
+      myCurrentBalance);
+    let popupBalance = (selectId("popup-balance").innerText = floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById("quta-donate").innerText =
-        floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("quta-donate").innerText = floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
 
-      let myBalanceAfterDonate = (document.getElementById(
-        "my-balance"
-      ).innerText = myBalance);
-      let donateBalance = (document.getElementById("quta-donate").innerText =
-        floodDonate);
+      let myBalanceAfterDonate = (selectId("my-balance").innerText = myBalance);
+      let donateBalance = (selectId("quta-donate").innerText = floodDonate);
       // popup
-      let popup = document.getElementById("popup").classList.add("hidden");
+      let popup = selectId("popup").classList.add("hidden");
       return;
     }
     // popup item
 
     if (floodDonateInput > 0) {
-      let popup = document.getElementById("popup").classList.remove("hidden");
+      let popup = selectId("popup").classList.remove("hidden");
     }
     // history
     let history = document.createElement("div");
@@ -171,14 +145,7 @@ document
               <p>${new Date().toString()}</P>
         
               `;
-    let historyContainer = document.getElementById("history");
+    let historyContainer = selectId("history");
     historyContainer.insertBefore(history, historyContainer.firstChild);
     console.log(historyContainer);
-  });
-
-// popup close
-document
-  .getElementById("popup-close-button")
-  .addEventListener("click", function () {
-    let popup = document.getElementById("popup").classList.add("hidden");
   });
