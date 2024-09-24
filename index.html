@@ -13,7 +13,7 @@
     <main class="relative">
 
         <!-- header section start  -->
-        <header>
+        <header id="header" class="z-50 w-full">
             <!-- menu section  -->
             <div class="bg-[#F9F7F3] ">
                 <div class="w-11/12 mx-auto py-5 ">
@@ -42,10 +42,10 @@
 
             <!-- button  -->
 
-            <div class="flex items-center justify-center space-x-3 mt-10 md:mt-14 mb-4 md:mb-7">
-                <button
+            <div id="button-section" class="flex items-center justify-center space-x-3 mt-10 md:mt-14 mb-4 md:mb-7">
+                <button id="btn-donate" 
                     class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl bg-[#B4F461] rounded-md">Donation</button>
-                <button
+                <button id="btn-history"
                     class=" text-black font-semibold px-4 py-2 md:px-7 md:py-3 text-xl rounded-md border-2">History</button>
             </div>
 
@@ -54,7 +54,7 @@
 
         <!-- donation section start  -->
 
-        <section class="w-11/12 lg:w-10/12 mx-auto space-y-5">
+        <section id="main-content" class="w-11/12 lg:w-10/12 mx-auto space-y-5">
             <!-- Nohakhali donation -->
             <div class="card lg:card-side bg-base-100 shadow-xl space-x-5 p-5 border">
                 <!-- image  -->
@@ -179,8 +179,7 @@
 
         <!-- history section -->
          <section>
-            <div id="history" class="w-10/12 mx-auto space-y-2 hidden">
-                <h1>this is history</h1>
+            <div id="history" class="w-9/12 mx-auto space-y-2 hidden">
             </div>
          </section>
     </main>
@@ -188,6 +187,8 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/function.js"></script>
+    <script src="./js/button.js"></script>
+    <script src="./js/header.js"></script>
 </body>
 
 </html>

@@ -9,49 +9,53 @@ document
     let myCurrentBalance = myBalance - floodDonateInput;
     let donateBalance = (document.getElementById("flood-donate").innerText =
       floodDonateBalance);
-      
-    let myBalanceAfterDonate = (document.getElementById("my-balance").innerText = myCurrentBalance);
-    let popupBalance = document.getElementById('popup-balance').innerText = floodDonateInput;
 
+    let myBalanceAfterDonate = (document.getElementById(
+      "my-balance"
+    ).innerText = myCurrentBalance);
+    let popupBalance = (document.getElementById("popup-balance").innerText =
+      floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("flood-donate").innerText =
-        floodDonate;
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById("flood-donate").innerText =
+        floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
-      
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("flood-donate").innerText =
-        floodDonate;
-        // popup 
-        let popup = document.getElementById('popup').classList.add('hidden');
-        return;
+
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById("flood-donate").innerText =
+        floodDonate);
+      // popup
+      let popup = document.getElementById("popup").classList.add("hidden");
+      return;
     }
-    // popup item 
-    if (floodDonateInput > 0){
-      let popup = document.getElementById('popup').classList.remove('hidden');
+    // popup item
+    if (floodDonateInput > 0) {
+      let popup = document.getElementById("popup").classList.remove("hidden");
     }
 
-    // history 
-    let history= document.createElement('div');
+    // history
+    let history = document.createElement("div");
     history.className = "p-3 rounded-md border-2 border-gray-500";
     history.innerHTML = `
       <p class="text-xl"> ${floodDonateInput} Taka is Donated for famine-2024 at Feni, Bangladesh </p>
       <p>${new Date().toString()}</P>
 
-      `
-    let historyContainer = document.getElementById('history');
+      `;
+    let historyContainer = document.getElementById("history");
     historyContainer.insertBefore(history, historyContainer.firstChild);
     console.log(historyContainer);
-
   });
 
-
-  // fani flood dontaion section 
+// fani flood dontaion section
 
 document
   .getElementById("feni-flood-donate-button")
@@ -62,41 +66,60 @@ document
     let myBalance = totalDonation("my-balance");
     let floodDonateBalance = floodDonateInput + floodDonate;
     let myCurrentBalance = myBalance - floodDonateInput;
-    let donateBalance = (document.getElementById("feni-flood-donate").innerText =
-      floodDonateBalance);
-      
-    let myBalanceAfterDonate = (document.getElementById("my-balance").innerText = myCurrentBalance);
-    let popupBalance = document.getElementById('popup-balance').innerText = floodDonateInput;
+    let donateBalance = (document.getElementById(
+      "feni-flood-donate"
+    ).innerText = floodDonateBalance);
 
+    let myBalanceAfterDonate = (document.getElementById(
+      "my-balance"
+    ).innerText = myCurrentBalance);
+    let popupBalance = (document.getElementById("popup-balance").innerText =
+      floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("feni-flood-donate").innerText =
-        floodDonate;
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById(
+        "feni-flood-donate"
+      ).innerText = floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
-      
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("feni-flood-donate").innerText =
-        floodDonate;
-        // popup 
-        let popup = document.getElementById('popup').classList.add('hidden');
-        return;
-    }
-    // popup item 
 
-
-    if (floodDonateInput > 0){
-      let popup = document.getElementById('popup').classList.remove('hidden');
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById(
+        "feni-flood-donate"
+      ).innerText = floodDonate);
+      // popup
+      let popup = document.getElementById("popup").classList.add("hidden");
+      return;
     }
+    // popup item
+
+    if (floodDonateInput > 0) {
+      let popup = document.getElementById("popup").classList.remove("hidden");
+    }
+    // history
+    let history = document.createElement("div");
+    history.className = "p-3 rounded-md border-2 border-gray-500";
+    history.innerHTML = `
+          <p class="text-xl"> ${floodDonateInput} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+          <p>${new Date().toString()}</P>
+    
+          `;
+    let historyContainer = document.getElementById("history");
+    historyContainer.insertBefore(history, historyContainer.firstChild);
+    console.log(historyContainer);
   });
 
-  // Quota Movement
+// Quota Movement
 
-  document
+document
   .getElementById("quta-donate-button")
   .addEventListener("click", function (event) {
     event.preventDefault();
@@ -107,39 +130,55 @@ document
     let myCurrentBalance = myBalance - floodDonateInput;
     let donateBalance = (document.getElementById("quta-donate").innerText =
       floodDonateBalance);
-      
-    let myBalanceAfterDonate = (document.getElementById("my-balance").innerText = myCurrentBalance);
-    let popupBalance = document.getElementById('popup-balance').innerText = floodDonateInput;
 
+    let myBalanceAfterDonate = (document.getElementById(
+      "my-balance"
+    ).innerText = myCurrentBalance);
+    let popupBalance = (document.getElementById("popup-balance").innerText =
+      floodDonateInput);
 
     if (floodDonateInput <= 0 || isNaN(floodDonateInput)) {
       alert("Please provide correct information");
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("quta-donate").innerText =
-        floodDonate;
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById("quta-donate").innerText =
+        floodDonate);
     }
 
     if (myBalance < floodDonateInput || myBalance <= 0) {
       alert("Your Balance is low");
-      
-      let myBalanceAfterDonate = document.getElementById("my-balance").innerText = myBalance;
-      let donateBalance = document.getElementById("quta-donate").innerText =
-        floodDonate;
-        // popup 
-        let popup = document.getElementById('popup').classList.add('hidden');
-        return;
-    }
-    // popup item 
 
-
-    if (floodDonateInput > 0){
-      let popup = document.getElementById('popup').classList.remove('hidden');
+      let myBalanceAfterDonate = (document.getElementById(
+        "my-balance"
+      ).innerText = myBalance);
+      let donateBalance = (document.getElementById("quta-donate").innerText =
+        floodDonate);
+      // popup
+      let popup = document.getElementById("popup").classList.add("hidden");
+      return;
     }
+    // popup item
+
+    if (floodDonateInput > 0) {
+      let popup = document.getElementById("popup").classList.remove("hidden");
+    }
+    // history
+    let history = document.createElement("div");
+    history.className = "p-3 rounded-md border-2 border-gray-500";
+    history.innerHTML = `
+              <p class="text-xl"> ${floodDonateInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+              <p>${new Date().toString()}</P>
+        
+              `;
+    let historyContainer = document.getElementById("history");
+    historyContainer.insertBefore(history, historyContainer.firstChild);
+    console.log(historyContainer);
   });
 
-// popup close 
-document.getElementById('popup-close-button').addEventListener('click', function(){
-    let popup = document.getElementById('popup').classList.add('hidden');
-})
-
-
+// popup close
+document
+  .getElementById("popup-close-button")
+  .addEventListener("click", function () {
+    let popup = document.getElementById("popup").classList.add("hidden");
+  });
